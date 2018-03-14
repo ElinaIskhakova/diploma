@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>1123</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Гидравлическая промывка скважин</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-340</y>
+         <width>800</width>
+         <height>1778</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Таблица исходных данных</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Глубина начала L&lt;span style=&quot; vertical-align:sub;&quot;&gt;n &lt;/span&gt;(м)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLineEdit" name="lineEdit"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Глубина конца L&lt;span style=&quot; vertical-align:sub;&quot;&gt;k &lt;/span&gt;(м)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLineEdit" name="lineEdit_2"/>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Глубина напорного пласта L&lt;span style=&quot; vertical-align:sub;&quot;&gt;пл &lt;/span&gt;(м)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLineEdit" name="GlubinaNapora"/>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Давление пласта P&lt;span style=&quot; vertical-align:sub;&quot;&gt;пл &lt;/span&gt;(МПа)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLineEdit" name="Davlenieplasta"/>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Глубина слабого пласта L&lt;span style=&quot; vertical-align:sub;&quot;&gt;сл &lt;/span&gt;(м)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLineEdit" name="lineEdit_5"/>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Давление гидро-разрыва Р&lt;span style=&quot; vertical-align:sub;&quot;&gt;гр &lt;/span&gt;(МПа)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <widget class="QLineEdit" name="lineEdit_3"/>
+           </item>
+           <item row="12" column="0" colspan="2">
+            <widget class="QLabel" name="label_7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>758</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="sizeIncrement">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Предельно допустимое значение на насосах - рекомендуемая подача насосов Р&lt;span style=&quot; vertical-align:sub;&quot;&gt;доп&lt;/span&gt; (МПа)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0">
+            <widget class="QLineEdit" name="lineEdit_4"/>
+           </item>
+           <item row="14" column="0" colspan="2">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Предельно допустимые потери давления в заколонном пространстве Р&lt;span style=&quot; vertical-align:sub;&quot;&gt;к.доп &lt;/span&gt;(МПа)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="0">
+            <widget class="QLineEdit" name="lineEdit_6"/>
+           </item>
+           <item row="16" column="0">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>Способ бурения</string>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>Код турбобура</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="0">
+            <widget class="QLineEdit" name="lineEdit_10"/>
+           </item>
+           <item row="20" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Шифр УБТ</string>
+             </property>
+            </widget>
+           </item>
+           <item row="21" column="0">
+            <widget class="QLineEdit" name="lineEdit_11"/>
+           </item>
+           <item row="22" column="0">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Код УБТ</string>
+             </property>
+            </widget>
+           </item>
+           <item row="23" column="0">
+            <widget class="QLineEdit" name="lineEdit_12"/>
+           </item>
+           <item row="24" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Длина УБТ (м)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="25" column="0">
+            <widget class="QLineEdit" name="lineEdit_8"/>
+           </item>
+           <item row="26" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Шифр бурильной трубы</string>
+             </property>
+            </widget>
+           </item>
+           <item row="27" column="0">
+            <widget class="QLineEdit" name="lineEdit_9"/>
+           </item>
+           <item row="28" column="0">
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Код бурильной трубы</string>
+             </property>
+            </widget>
+           </item>
+           <item row="29" column="0">
+            <widget class="QLineEdit" name="lineEdit_13"/>
+           </item>
+           <item row="30" column="0">
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Диаметр долота (мм)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="31" column="0">
+            <widget class="QLineEdit" name="lineEdit_14"/>
+           </item>
+           <item row="32" column="0">
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Глубина обсаженной части скважины (м)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="33" column="0">
+            <widget class="QLineEdit" name="lineEdit_15"/>
+           </item>
+           <item row="34" column="0">
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Внутренний диаметр обсадной колонны (мм)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="35" column="0">
+            <widget class="QLineEdit" name="lineEdit_16"/>
+           </item>
+           <item row="36" column="0">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>Код насоса</string>
+             </property>
+            </widget>
+           </item>
+           <item row="37" column="0">
+            <widget class="QLineEdit" name="lineEdit_17"/>
+           </item>
+           <item row="38" column="0">
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>Код обвязки насосов</string>
+             </property>
+            </widget>
+           </item>
+           <item row="39" column="0">
+            <widget class="QLineEdit" name="lineEdit_18"/>
+           </item>
+           <item row="40" column="0">
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>Вид технологической операции</string>
+             </property>
+            </widget>
+           </item>
+           <item row="41" column="0">
+            <widget class="QLineEdit" name="lineEdit_19"/>
+           </item>
+           <item row="42" column="0">
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>Соотношение длин колонны в скважине к глубине забоя</string>
+             </property>
+            </widget>
+           </item>
+           <item row="43" column="0">
+            <widget class="QLineEdit" name="lineEdit_20"/>
+           </item>
+           <item row="44" column="0">
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>Динамическое напряжение сдвига</string>
+             </property>
+            </widget>
+           </item>
+           <item row="45" column="0">
+            <widget class="QLineEdit" name="lineEdit_21"/>
+           </item>
+           <item row="46" column="0">
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>Структурная вязкость</string>
+             </property>
+            </widget>
+           </item>
+           <item row="47" column="0">
+            <widget class="QLineEdit" name="lineEdit_22"/>
+           </item>
+           <item row="48" column="0">
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>Тип привода насоса (дизельный или электрический)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="49" column="0">
+            <widget class="QLineEdit" name="lineEdit_23"/>
+           </item>
+           <item row="50" column="0">
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>Модель жидкости - Бингама (ВПЖ)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="51" column="0">
+            <widget class="QLineEdit" name="lineEdit_24"/>
+           </item>
+           <item row="52" column="0">
+            <widget class="QLabel" name="label_27">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Динамическое напряжение сдвига τ&lt;span style=&quot; vertical-align:sub;&quot;&gt;0  &lt;/span&gt;(Па)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="53" column="0">
+            <widget class="QLineEdit" name="lineEdit_25"/>
+           </item>
+           <item row="54" column="0">
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Структурная вязкость η (Па*с)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="55" column="0">
+            <widget class="QLineEdit" name="lineEdit_26"/>
+           </item>
+           <item row="56" column="0">
+            <widget class="QLabel" name="label_29">
+             <property name="text">
+              <string>Вид технологической операции</string>
+             </property>
+            </widget>
+           </item>
+           <item row="57" column="0">
+            <widget class="QLineEdit" name="lineEdit_27"/>
+           </item>
+           <item row="58" column="0" colspan="2">
+            <widget class="QLabel" name="label_30">
+             <property name="text">
+              <string>Соотношение длин колонны в скважине к глубине забоя ( в расчетный момент времени проведения операции)</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="59" column="0">
+            <widget class="QLineEdit" name="lineEdit_28"/>
+           </item>
+           <item row="60" column="0">
+            <widget class="QLabel" name="label_31">
+             <property name="text">
+              <string>Расчетная плотность:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="61" column="0">
+            <widget class="QLineEdit" name="Plotnost"/>
+           </item>
+           <item row="62" column="0">
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>Расчет плотности</string>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="0">
+            <widget class="QComboBox" name="comboBox">
+             <item>
+              <property name="text">
+               <string>турб</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>долото</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>834</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
