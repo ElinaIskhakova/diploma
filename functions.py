@@ -3,6 +3,7 @@ import sys
 # Импортируем  интерфейс
 from mainwindow import *
 from math import pow,ceil
+from RashodQr import *
 from PyQt5 import QtCore, QtGui, QtWidgets
 g=9.81
 
@@ -18,14 +19,16 @@ class MyWin(QtWidgets.QMainWindow):
     # функция которая выполняется при нажатии на кнопку 
     def getPlotnost(self):
         try:
-            GlubinaNapora = int(self.ui.GlubinaNapora.text())
-            if GlubinaNapora>=1200:
-                Kb=1.05
-            else:
-                Kb=1.5
-            DavleniePlasta = int(self.ui.DavleniePlasta.text())
-            r = round(ceil((Kb*DavleniePlasta*pow(10,6))/(g*GlubinaNapora))/10)*10
-            self.ui.Plotnost.setText(str(r))
+         #   GlubinaNapora = int(self.ui.GlubinaNapora.text())
+           # if GlubinaNapora>=1200:
+         #       Kb=1.05
+         #   else:
+         #       Kb=1.5
+          #  DavleniePlasta = int(self.ui.DavleniePlasta.text())
+          #  r = round(ceil((Kb*DavleniePlasta*pow(10,6))/(g*GlubinaNapora))/10)*10
+            DiametrDolota=float(self.ui.DiametrDolota.text())
+            self.ui.Plotnost.setText(str(Q1(DiametrDolota)))
+          #  Q1(int(self.ui.DiametrDolota.text()))
         except:
             msg = QtWidgets.QMessageBox()
             msg.setWindowTitle('Ошибка ввода!')
