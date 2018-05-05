@@ -6,4 +6,3 @@ l0=9
 lm=0
 Km=1.05
 db=(dn-2*delta)/1000
-print (db)

@@ -22,8 +22,7 @@ def Q3():
     K=0.9
     Q3 = round(30 * pow(10, -3) * sqrt(Md * pV / (KT.Ms * pow(10, 3) * 1200 * K)),3)*1000
     return  Q3
-print(Q1(269.9))
-print(Q2(269.9,279))
-print(Q3())
-print(max(Q1(269.9),Q2(269.9,279),Q3()))
+def MaxQr():
+    Qr=max(Q1(269.9),Q2(269.9,279),Q3())
+    return Qr
 
