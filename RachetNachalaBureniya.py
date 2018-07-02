@@ -14,9 +14,10 @@ def E1(t0,dv,p,n,e2):
       Senv=round(t0*dv/(Vb*n),3)
       Rev1=Rev/(1+Senv/6)
       Lv=round(0.075/(Rev1**0.125),3)
-      Pv=Lv*8*((RQ.MaxQr()/1000)**2)*p*75*Km/((pi**2)*(dv**5))/1000000
+      Pv=round(Lv*8*((RQ.MaxQr()/1000)**2)*p*75*Km/((pi**2)*(dv**5))/1000000,3)
+      print(Hev,Revkr,Vvkr,Qvkr,Vb,Rev,Senv,Rev1,Lv,Pv)
       return Pv
 
-print (E1(6,0.09,1200,0.016,2100))
+#print (E1(6,0.09,1200,0.016,2100))
 
-
+print (E1(6,0.125,1200,0.016,2100))

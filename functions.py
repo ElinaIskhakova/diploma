@@ -19,15 +19,15 @@ class MyWin(QtWidgets.QMainWindow):
     # функция которая выполняется при нажатии на кнопку 
     def getPlotnost(self):
         try:
-         #   GlubinaNapora = int(self.ui.GlubinaNapora.text())
-           # if GlubinaNapora>=1200:
-         #       Kb=1.05
-         #   else:
-         #       Kb=1.5
-          #  DavleniePlasta = int(self.ui.DavleniePlasta.text())
-          #  r = round(ceil((Kb*DavleniePlasta*pow(10,6))/(g*GlubinaNapora))/10)*10
-            DiametrDolota=float(self.ui.DiametrDolota.text())
-            self.ui.Plotnost.setText(str(Q1(DiametrDolota)))
+            GlubinaNapora = int(self.ui.GlubinaNapora.text())
+            if GlubinaNapora>=1200:
+                Kb=1.05
+            else:
+                Kb=1.5
+            DavleniePlasta = int(self.ui.DavleniePlasta.text())
+            r = round(ceil((Kb*DavleniePlasta*pow(10,6))/(g*GlubinaNapora))/10)*10
+           # DiametrDolota=float(self.ui.DiametrDolota.text())
+            self.ui.Plotnost.setText(str(r))
           #  Q1(int(self.ui.DiametrDolota.text()))
         except:
             msg = QtWidgets.QMessageBox()
